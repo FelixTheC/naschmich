@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block content %}
+    <div class="col-lg-4">
+        {% placeholder "left" %}
+    </div>
+
+    <div class="col-lg-4">
+        {% placeholder "middle" %}
+    </div>
+
+    <div class="col-lg-4">
+        <div>
+            {% placeholder "right" %}
+        </div>
+    </div>
+{% endblock content %}

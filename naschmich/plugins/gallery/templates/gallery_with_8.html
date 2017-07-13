@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block content %}
+    <div class="col-lg-12">
+        <h1>{{ instance.header }}</h1>
+    </div>
+    <div class="col-lg-4">
+       <img src="{% thumbnail instance.pic1 250x250 crop %}">
+    </div>
+    <div class="col-lg-4">
+       <img src="{% thumbnail instance.pic2 250x250 crop %}">
+    </div>
+    <div class="col-lg-4">
+       <img src="{% thumbnail instance.pic3 250x250 crop %}">
+    </div>
+    <div class="col-lg-4">
+       <img src="{% thumbnail instance.pic4 250x250 crop %}">
+    </div>
+    <div class="col-lg-4">
+       <img src="{% thumbnail instance.pic5 250x250 crop %}">
+    </div>
+    <div class="col-lg-4">
+       <img src="{% thumbnail instance.pic6 250x250 crop %}">
+    </div>
+    <div class="col-lg-4">
+       <img src="{% thumbnail instance.pic7 250x250 crop %}">
+    </div>
+    <div class="col-lg-4">
+       <img src="{% thumbnail instance.pic8 250x250 crop %}">
+    </div>
+    <br>
+{% endblock content %}

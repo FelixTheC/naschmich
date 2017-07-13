@@ -148,7 +148,8 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'naschmich'
+    'naschmich',
+    'naschmich.plugins.gallery',
 )
 
 LANGUAGES = (
@@ -177,8 +178,10 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('logo.html', 'Logo'),
+    ('gallery.html', 'Gallery'),
+    ('contact.html', 'Contact'),
+    ('three_columns.html', 'Drei_Spalten'),
 )
 
 CMS_PERMISSION = True
