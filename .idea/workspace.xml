@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="915f6371-14cd-4436-9bc4-1d00d73f3b13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naschmich/plugins/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naschmich/plugins/gallery/cms_plugins.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naschmich/plugins/gallery/templates/gallery_with_4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naschmich/plugins/gallery/templates/gallery_with_6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naschmich/plugins/gallery/templates/gallery_with_8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naschmich/static/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naschmich/templates/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naschmich/templates/gallery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naschmich/templates/three_columns.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/naschmich/templates/sidebar_right.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/naschmich/templates/sidebar_left.html" afterPath="$PROJECT_DIR$/naschmich/templates/logo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/naschmich/settings.py" afterPath="$PROJECT_DIR$/naschmich/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/naschmich/templates/base.html" afterPath="$PROJECT_DIR$/naschmich/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/naschmich/templates/fullwidth.html" afterPath="$PROJECT_DIR$/naschmich/templates/fullwidth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.db" afterPath="$PROJECT_DIR$/project.db" />
-    </list>
+    <list default="true" id="915f6371-14cd-4436-9bc4-1d00d73f3b13" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
