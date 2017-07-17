@@ -1,4 +1,5 @@
 import os
+from naschmich.settings_placeholder import get_placeholder_settings
 gettext = lambda s: s
 DATA_DIR = os.path.dirname(os.path.dirname(__file__))
 """
@@ -82,7 +83,7 @@ SITE_ID = 1
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'naschmich', 'templates'),],
+        'DIRS': [os.path.join(BASE_DIR, 'naschmich', 'templates'), ],
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -180,15 +181,15 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
-    ('logo.html', 'Logo'),
     ('gallery.html', 'Gallery'),
     ('contact.html', 'Contact'),
+    ('two_columns.html', 'Zwei_Spalten'),
     ('three_columns.html', 'Drei_Spalten'),
 )
 
 CMS_PERMISSION = True
 
-CMS_PLACEHOLDER_CONF = {}
+CMS_PLACEHOLDER_CONF = get_placeholder_settings()
 
 DATABASES = {
     'default': {
@@ -216,10 +217,10 @@ THUMBNAIL_PROCESSORS = (
 # EMAIL Settings
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
-#with open(PROJECT_ROOT +'/emailname.txt') as f:
-#    EMAIL_HOST_USER = f.read().strip()
-#with open(PROJECT_ROOT +'/pwd.txt') as f:
-#    EMAIL_HOST_PASSWORD = f.read().strip()
+with open(PROJECT_ROOT +'/emailname.txt') as f:
+    EMAIL_HOST_USER = f.read().strip()
+with open(PROJECT_ROOT +'/pwd.txt') as f:
+    EMAIL_HOST_PASSWORD = f.read().strip()
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = "hompage@page.de"

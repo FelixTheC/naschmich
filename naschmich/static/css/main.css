@@ -1,5 +1,11 @@
-.body {
+.logo {
+    margin-top: -4%;
+}
+
+.test {
     padding-top: 5px;
+    padding-bottom: 0.5%;
+    /*background-color: floralwhite;*/
     background: repeating-linear-gradient(
     -55deg,
     #5a3e3e,
