@@ -1,21 +1,26 @@
 .body {
-    background-color: brown;
     padding-top: 5px;
     background: repeating-linear-gradient(
     -55deg,
     #5a3e3e,
     #100c0c 10px,
-    #333 10px,
-    #7f5f5f 20px
+    #deb887 10px,
+    #deb887 20px
 );
  }
 
 .main-content {
     margin-top: -1.5%;
+    padding-bottom: 1%;
+    background-color: floralwhite;
 }
 
 .sidenav {
     margin-top: 10px;
     display: grid;
     text-align: center;
+}
+
+.contact {
+    margin-top: 2%;
 }

@@ -17,6 +17,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -98,8 +99,8 @@ TEMPLATES = [
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-    'django.template.loaders.eggs.Loader'
+                'django.template.loaders.app_directories.Loader',
+                'django.template.loaders.eggs.Loader'
             ],
         },
     },
@@ -150,6 +151,7 @@ INSTALLED_APPS = (
     'djangocms_video',
     'naschmich',
     'naschmich.plugins.gallery',
+
 )
 
 LANGUAGES = (
@@ -210,3 +212,14 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+# EMAIL Settings
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+#with open(PROJECT_ROOT +'/emailname.txt') as f:
+#    EMAIL_HOST_USER = f.read().strip()
+#with open(PROJECT_ROOT +'/pwd.txt') as f:
+#    EMAIL_HOST_PASSWORD = f.read().strip()
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = "hompage@page.de"
