@@ -152,6 +152,7 @@ INSTALLED_APPS = (
     'djangocms_video',
     'naschmich',
     'naschmich.plugins.gallery',
+    'naschmich.plugins.contact',
 
 )
 
@@ -224,3 +225,6 @@ with open(PROJECT_ROOT +'/pwd.txt') as f:
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = "hompage@page.de"
+
+def get_email_user():
+    return EMAIL_HOST_USER

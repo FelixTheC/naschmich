@@ -1,6 +1,6 @@
 def get_placeholder_settings():
     placeholders = {
-        'contact.html map': {
+        'contact.html contact_map_or_pic': {
             "plugins": ['FilerImagePlugin', 'GoogleMapPlugin']
         },
         'contact.html contact': {
